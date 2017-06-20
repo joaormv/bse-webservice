@@ -1,0 +1,56 @@
+<%= form_for(emprestimos) do |f| %>
+ <% if emprestimo.errors.any? %>
+    <div id="error_explanation">
+      <h2>Descobrimos <%= pluralize(@emprestimo.errors.count, "erro") %> no preenchimento do formulário :(</h2>
+
+      <ul>
+      <% @emprestimo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  </br>
+
+  <div class="field">
+    <%= f.label :banco %>
+    <%= f.text_field :banco %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :data_emprestimo %>
+    <%= f.text_field :data_emprestimo %>
+  </div>
+  </br>
+
+  <div class="field">
+    <%= f.label :valor %>
+    <%= f.text_field :valor %>
+  </div>
+
+  <div class="field">
+    <%= f.label :qnt_parcelas %>
+    <%= f.text_field :qnt_parcelas %>
+  </div>
+  </br>
+
+  <div class="field">
+    <%= f.label :valor_parcelas %>
+    <%= f.text_field :valor_parcelas %>
+  </div>
+  </br>
+
+  <div class="field">
+    <%= f.label :corretora %>
+    <%= f.text_field :corretora %>
+  </div>
+  </br>
+
+   <div class="actions">
+    <%= f.submit %>
+  </div>
+  </br>
+  </br>
+
+<% end %>

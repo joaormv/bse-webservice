@@ -1,0 +1,27 @@
+<p>
+<strong>Nome: </strong> <%= @cliente.nome %><br/>
+<strong>RG: </strong> <%= @cliente.rg %>
+<strong>CPF: </strong> <%= @cliente.cpf %> <br/>
+<strong>Data de Nascimento: </strong> <%= @cliente.data_nasc %><br/>
+<strong>Matricula: </strong> <%= @cliente.matricula %> 
+<strong>Senha: </strong> <%= @cliente.senha %><br/>
+<strong>Convênio: </strong> <%= @cliente.convenio %> <br/>
+<strong>Orgão: </strong> <%= @cliente.orgao %><br/>
+<strong>Tel: </strong> <%= @cliente.tel %> 
+<strong>Cel: </strong> <%= @cliente.tel2 %><br/>
+<strong>Email: </strong> <%= @cliente.email %>
+</p>
+
+<h2>Endereço</h2>
+
+<p>
+
+<strong>Rua: </strong> <%= @cliente.endereco.rua %> 
+<strong>Numero: </strong> <%= @cliente.endereco.numero %> <br/>
+<strong>Complemento: </strong> <%= @cliente.endereco.complemento %> <br>
+<strong>Bairro: </strong> <%= @cliente.endereco.bairro %> <br/>
+<strong>Cidade: </strong> <%= @cliente.endereco.cidade %>
+<strong>Estado: </strong> <%= @cliente.endereco.estado %> <br/>
+<strong>CEP: </strong> <%= @cliente.endereco.cep %> <br/>
+
+</p>

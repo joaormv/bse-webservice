@@ -1,0 +1,490 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"emprestimos",
+				"emprestimos_fields"
+			],
+			[
+				"empre",
+				"emprestimo\t(_emprestimos_form.html.erb)"
+			],
+			[
+				"data",
+				"data_nasc\t(_clientes_form.html.erb)"
+			],
+			[
+				"logger",
+				"logger.debug"
+			],
+			[
+				"endereco",
+				"endereco_fields"
+			],
+			[
+				"Emprs",
+				"Emprestimo\t(emprestimo.rb)"
+			],
+			[
+				"se",
+				"senha\t(cliente.rb)"
+			],
+			[
+				"tel",
+				"tel2\t(cliente.rb)"
+			],
+			[
+				"ma",
+				"matricula\t(cliente.rb)"
+			],
+			[
+				"da",
+				"data_nasc\t(20170205185445_create_clientes.rb)"
+			],
+			[
+				"form_txt_",
+				"form_txt_datanasc"
+			],
+			[
+				"form_txt",
+				"form_txt_orgao"
+			],
+			[
+				"valor",
+				"valor_parcelas"
+			],
+			[
+				"fe",
+				"fechar_conta"
+			],
+			[
+				"res",
+				"restaurante_2"
+			],
+			[
+				"rest",
+				"restaurante_2"
+			],
+			[
+				"resta",
+				"restaurante_1"
+			],
+			[
+				"restau",
+				"restaurant_1"
+			],
+			[
+				"nome",
+				"nomeRestaurante"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2444,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 4308,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimos_fields.html.erb",
+			"settings":
+			{
+				"buffer_size": 687,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 372.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"'install' 'Package Control: Install Package'",
+			"'install' to select 'Package Control: Install Package'",
+			"'install'",
+			"'install' to select 'Package Control: Install Package'",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/joao/Documentos/Rails/bse-webservice",
+		"/home/joao/Documentos/Rails/bse-webservice/app",
+		"/home/joao/Documentos/Rails/bse-webservice/app/assets",
+		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos",
+		"/home/joao/Documentos/Rails/bse-webservice/lib/assets"
+	],
+	"file_history":
+	[
+		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts/application.js",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/Gemfile",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_fields.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/emprestimos_controller.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/lib/tasks/utils.rake",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/cliente.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/emprestimo.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/config/routes.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/new.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/enderecos_controller.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/endereco.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/edit.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/seeds.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170205185445_create_clientes.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/operador.rb",
+		"/home/joao/Documentos/Rails/blog/app/views/articles/show.html.erb",
+		"/home/joao/Documentos/Rails/blog/app/controllers/articles_controller.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208152150_create_enderecos.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208154641_create_operadors.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170217161842_rename_senha_to_hashed_password.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170217162651_remove_limit_hashed_password.rb",
+		"/home/joao/Documentos/Rails/blog/db/migrate/20170117193956_create_users.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208150438_create_emprestimos.rb",
+		"/home/joao/Documentos/Rails/blog/app/models/article.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/schema.rb",
+		"/home/joao/Documentos/Rails/restaurante/duck_typing.rb",
+		"/home/joao/Documentos/Rails/blog/app/models/user.rb",
+		"/home/joao/Documentos/Rails/blog/db/migrate/20170119180833_create_comments.rb",
+		"/home/joao/Documentos/Rails/blog/db/migrate/20170119164159_create_articles_categories.rb",
+		"/home/joao/Documentos/Rails/blog/db/migrate/20170119164053_create_categories.rb",
+		"/home/joao/Documentos/Rails/blog/db/migrate/20170118191330_add_user_id_to_articles.rb",
+		"/home/joao/Documentos/Rails/blog/db/migrate/20170117194823_create_profiles.rb",
+		"/home/joao/Documentos/Rails/restaurante/restaurante_basico.rb",
+		"/home/joao/Documentos/Rails/restaurante/restaurante_avancado.rb",
+		"/home/joao/Documentos/Rails/restaurante/listas.rb",
+		"/home/joao/Documentos/Rails/restaurante/exception.rb",
+		"/home/joao/Documentos/Rails/restaurante/Restaurante.rb",
+		"/home/joao/Documentos/Rails/blog/app/models/category.rb",
+		"/home/joao/Documentos/Rails/blog/app/models/profile.rb",
+		"/home/joao/Documentos/Rails/blog/app/models/comment.rb",
+		"/home/joao/Documentos/Rails/blog/db/seeds.rb",
+		"/home/joao/Documentos/Rails/blog/Gemfile",
+		"/home/joao/Documentos/Rails/blog/app/views/articles/_form.html.erb",
+		"/home/joao/Documentos/Rails/blog/db/migrate/20161224173142_add_excerpt_and_location_to_articles.rb",
+		"/home/joao/Documentos/Rails/blog/db/migrate/20161223200247_create_articles.rb",
+		"/home/joao/Documentos/Rails/blog/config/database.yml",
+		"/home/joao/Documentos/Rails/hellow/app/controllers/salutation_controller.rb",
+		"/home/joao/Documentos/Rails/hellow/app/views/salutation/hello.html.erb",
+		"/home/joao/Documentos/Rails/hellow/config/routes.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"emprestimos_fields",
+			"resources :clientes\n  resources :endereco\n  resources :emprestimo",
+			"respond_to do |format|\n      if @emprestimo.save\n        format.html { redirect_to @emprestimo, notice: 'emprestimo cadastrado com sucesso.' }\n        format.json { render :show, status: :created, location: @emprestimo }\n      else\n        format.html { render :new }\n        format.json { render json: @emprestimo.errors, status: :unprocessable_entity }\n      end",
+			"@emprestimo",
+			"cliente",
+			"Cliente",
+			"cliente",
+			"'\n",
+			"person",
+			"article"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"f",
+			"@emprestimos",
+			"emprestimo",
+			"Emprestimo",
+			"endereco",
+			"cliente"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2420,
+								2420
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4188,
+								4188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2640.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimos_fields.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bse-webservice.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documentos/Rails/bse-webservice/config/blog.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 295.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
