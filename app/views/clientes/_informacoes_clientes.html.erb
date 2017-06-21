@@ -1,3 +1,4 @@
+<h2>Informações Pessoais</h2>
 <p>
 <strong>Nome: </strong> <%= @cliente.nome %><br/>
 <strong>RG: </strong> <%= @cliente.rg %>
@@ -25,3 +26,34 @@
 <strong>CEP: </strong> <%= @cliente.endereco.cep %> <br/>
 
 </p>
+
+<h2>Emprestimos</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Banco</th>
+      <th>Valor</th>
+      <th>Quantidade de parcelas</th>
+      <th>Valor da parcela</th>
+      <th>Data</th>
+      <th>Corretora</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @emprestimos.each do |emprestimo| %>
+      <tr>
+        <td><%= emprestimo.banco %></td>
+        <td><%= emprestimo.valor %></td>
+        <td><%= emprestimo.qnt_parcelas %></td>
+        <td><%= emprestimo.valor_parcelas %></td>
+        <td><%= emprestimo.data_emprestimo %></td>
+        <td><%= emprestimo.corretora %></td>
+        <td><%= link_to 'Editar', edit_emprestimo_path(emprestimo) %></td>
+        <td><%= link_to 'Remover', emprestimo, method: :delete, data: { confirm: 'Tem certeza que quer remover este emprestimo?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

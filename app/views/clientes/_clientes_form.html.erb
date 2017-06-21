@@ -190,10 +190,14 @@
 
     <div id="emprestimos"> 
       <%= f.fields_for :emprestimos do |emprestimos_fields| %>
-        <%= render 'emprestimo_fields', locals: { f: emprestimos_fields} %>
+        <h2>Emprestimos</h2>
+        <%= render partial: 'emprestimo_fields', locals: { f: emprestimos_fields} %>
       <%end%>
+      </br>
         <%= link_to_add_association 'Adicionar emprestimo', f, :emprestimos %>
     </div>
+    </br>
+    </br>
 
    <!-- END FORM -->
 

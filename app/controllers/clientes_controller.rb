@@ -4,6 +4,7 @@ class ClientesController < ApplicationController
 
 	def show
 		@cliente = Cliente.find(params[:id])
+    @emprestimos = @cliente.emprestimos
     # logger.debug "Mostrando o nome do cliente: #{@cliente.nome}"
     # logger.info "#{@cliente}"
 	end
@@ -81,9 +82,9 @@ class ClientesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def cliente_params
       params.require(:cliente).permit(
-          :nome, :cpf, :rg, :data_nasc, :matricula, :senha, :orgao, :tel, :tel2, :convenio, :email, 
+          :nome, :cpf, :rg, :data_nasc, :matricula, :senha, :orgao, :tel, :tel2, :convenio, :email,
           endereco_attributes: [:rua, :numero, :complemento, :bairro, :cidade, :estado, :cep],
-          emprestimo_attributes: [:banco, :valor, :corretora, :qnt_parcelas, :valor_parcelas, :data_emprestimo, :_destroy]
+          emprestimos_attributes: [:banco, :valor, :corretora, :qnt_parcelas, :valor_parcelas, :data_emprestimo, :id, :_destroy]
         )
     end
 end

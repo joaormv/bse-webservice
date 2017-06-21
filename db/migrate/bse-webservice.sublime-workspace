@@ -87,7 +87,7 @@
 			"file": "/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2444,
+				"buffer_size": 2449,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -105,16 +105,28 @@
 			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 4308,
+				"buffer_size": 4322,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimos_fields.html.erb",
+			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 687,
+				"buffer_size": 349,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<h2>Informações Pessoais</h2>\n<p>\n<strong>Nome: </strong> <%= @cliente.nome %><br/>\n<strong>RG: </strong> <%= @cliente.rg %>\n<strong>CPF: </strong> <%= @cliente.cpf %> <br/>\n<strong>Data de Nascimento: </strong> <%= @cliente.data_nasc %><br/>\n<strong>Matricula: </strong> <%= @cliente.matricula %> \n<strong>Senha: </strong> <%= @cliente.senha %><br/>\n<strong>Convênio: </strong> <%= @cliente.convenio %> <br/>\n<strong>Orgão: </strong> <%= @cliente.orgao %><br/>\n<strong>Tel: </strong> <%= @cliente.tel %> \n<strong>Cel: </strong> <%= @cliente.tel2 %><br/>\n<strong>Email: </strong> <%= @cliente.email %>\n</p>\n\n<h2>Endereço</h2>\n\n<p>\n\n<strong>Rua: </strong> <%= @cliente.endereco.rua %> \n<strong>Numero: </strong> <%= @cliente.endereco.numero %> <br/>\n<strong>Complemento: </strong> <%= @cliente.endereco.complemento %> <br>\n<strong>Bairro: </strong> <%= @cliente.endereco.bairro %> <br/>\n<strong>Cidade: </strong> <%= @cliente.endereco.cidade %>\n<strong>Estado: </strong> <%= @cliente.endereco.estado %> <br/>\n<strong>CEP: </strong> <%= @cliente.endereco.cep %> <br/>\n\n</p>\n\n<h1>Articles</h1>\n\n<table>\n  <thead>\n    <tr>\n      <th>Banco</th>\n      <th>Valor</th>\n      <th>Quantidade de parcelas</th>\n      <th>Valor da parcela</th>\n      <th>Published at</th>\n      <th colspan=\"3\"></th>\n    </tr>\n  </thead>\n\n  <tbody>\n    <% @emprestimos.each do |article| %>\n      <tr>\n        <td><%= article.title %></td>\n        <td><%= article.location %></td>\n        <td><%= article.excerpt %></td>\n        <td><%= article.body %></td>\n        <td><%= article.published_at %></td>\n        <td><%= link_to 'Show', article %></td>\n        <td><%= link_to 'Edit', edit_article_path(article) %></td>\n        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>\n      </tr>\n    <% end %>\n  </tbody>\n</table>",
+			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
+			"file_size": 1875,
+			"file_write_time": 131425274633411163,
+			"settings":
+			{
+				"buffer_size": 1836,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -167,11 +179,11 @@
 		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos",
-		"/home/joao/Documentos/Rails/bse-webservice/lib/assets"
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos"
 	],
 	"file_history":
 	[
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts/application.js",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/Gemfile",
@@ -228,7 +240,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -275,7 +287,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -284,15 +296,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2444,
+						"buffer_size": 2449,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2420,
-								2420
+								2207,
+								2207
 							]
 						],
 						"settings":
@@ -302,7 +314,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 630.0,
+						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -335,7 +347,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -344,15 +356,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4308,
+						"buffer_size": 4322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4188,
-								4188
+								3869,
+								3869
 							]
 						],
 						"settings":
@@ -362,40 +374,66 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2640.0,
+						"translation.y": 1275.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimos_fields.html.erb",
+					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 687,
+						"buffer_size": 349,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								25,
-								25
+								39,
+								39
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1241,
+								1250
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 369.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -407,7 +445,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -440,7 +478,7 @@
 	"project": "bse-webservice.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
