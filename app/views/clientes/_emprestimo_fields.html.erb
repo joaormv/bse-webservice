@@ -1,33 +1,33 @@
 <div class="nested-fields">
-  <div class="field">
-    <%= f.label :banco %>
-    <%= f.text_field :banco %>
-  </div>
-  </br>
+	<div class="field">
+		<%= f.label :banco %>
+		<%= f.text_field :banco %>
+	</div>
+	</br>
 
-  <div class="field">
-    <%= f.label :data_emprestimo %>
-    <%= f.date_select :data_emprestimo, :start_year => 1995, :end_year => Date.today.year %>
-  </div>
+	<div class="field">
+		<%= f.label :data_emprestimo %>
+		<%= f.date_select :data_emprestimo, :start_year => 1995, :end_year => Date.today.year %>
+	</div>
 
-  <div class="field">
-    <%= f.label :valor %>
-    <%= f.text_field :valor %>
-  </div>
+	<div class="field">
+		<%= f.label :valor %>
+		<%= f.text_field :valor %>
+	</div>
 
-  <div class="field">
-    <%= f.label :qnt_parcelas %>
-    <%= f.text_field :qnt_parcelas %>
-  </div>
+	<div class="field">
+		<%= f.label :qnt_parcelas %>
+		<%= f.text_field :qnt_parcelas %>
+	</div>
 
-  <div class="field">
-    <%= f.label :valor_parcelas %>
-    <%= f.text_field :valor_parcelas %>
-  </div>
+	<div class="field">
+		<%= f.label :valor_parcelas %>
+		<%= f.text_field :valor_parcelas %>
+	</div>
 
-  <div class="field">
-    <%= f.label :corretora %>
-    <%= f.text_field :corretora %>
-  </div>
-  <%= link_to_remove_association 'Remover', f, data: { confirm: 'Tem certeza que quer remover este emprestimo?' } %>
+	<div class="field">
+		<%= f.label :corretora %>
+		<%= f.text_field :corretora %>
+	</div>
+	<%= link_to_remove_association 'Remover', f, data: { confirm: 'Tem certeza que quer remover este emprestimo?' } %>
 </div>

@@ -4,16 +4,24 @@
 		"selected_items":
 		[
 			[
+				"em",
+				"empréstimos\t(show.html.erb)"
+			],
+			[
+				"data",
+				"data_emprestimo\t(clientes_controller.rb)"
+			],
+			[
+				"valor",
+				"valor_parcelas\t(clientes_controller.rb)"
+			],
+			[
 				"emprestimos",
 				"emprestimos_fields"
 			],
 			[
 				"empre",
 				"emprestimo\t(_emprestimos_form.html.erb)"
-			],
-			[
-				"data",
-				"data_nasc\t(_clientes_form.html.erb)"
 			],
 			[
 				"logger",
@@ -52,10 +60,6 @@
 				"form_txt_orgao"
 			],
 			[
-				"valor",
-				"valor_parcelas"
-			],
-			[
 				"fe",
 				"fechar_conta"
 			],
@@ -84,51 +88,14 @@
 	"buffers":
 	[
 		{
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
+			"contents": "Package Control Messages\n========================\n\nEmmet\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n",
 			"settings":
 			{
-				"buffer_size": 2449,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 1090,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 4322,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
-			"settings":
-			{
-				"buffer_size": 349,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<h2>Informações Pessoais</h2>\n<p>\n<strong>Nome: </strong> <%= @cliente.nome %><br/>\n<strong>RG: </strong> <%= @cliente.rg %>\n<strong>CPF: </strong> <%= @cliente.cpf %> <br/>\n<strong>Data de Nascimento: </strong> <%= @cliente.data_nasc %><br/>\n<strong>Matricula: </strong> <%= @cliente.matricula %> \n<strong>Senha: </strong> <%= @cliente.senha %><br/>\n<strong>Convênio: </strong> <%= @cliente.convenio %> <br/>\n<strong>Orgão: </strong> <%= @cliente.orgao %><br/>\n<strong>Tel: </strong> <%= @cliente.tel %> \n<strong>Cel: </strong> <%= @cliente.tel2 %><br/>\n<strong>Email: </strong> <%= @cliente.email %>\n</p>\n\n<h2>Endereço</h2>\n\n<p>\n\n<strong>Rua: </strong> <%= @cliente.endereco.rua %> \n<strong>Numero: </strong> <%= @cliente.endereco.numero %> <br/>\n<strong>Complemento: </strong> <%= @cliente.endereco.complemento %> <br>\n<strong>Bairro: </strong> <%= @cliente.endereco.bairro %> <br/>\n<strong>Cidade: </strong> <%= @cliente.endereco.cidade %>\n<strong>Estado: </strong> <%= @cliente.endereco.estado %> <br/>\n<strong>CEP: </strong> <%= @cliente.endereco.cep %> <br/>\n\n</p>\n\n<h1>Articles</h1>\n\n<table>\n  <thead>\n    <tr>\n      <th>Banco</th>\n      <th>Valor</th>\n      <th>Quantidade de parcelas</th>\n      <th>Valor da parcela</th>\n      <th>Published at</th>\n      <th colspan=\"3\"></th>\n    </tr>\n  </thead>\n\n  <tbody>\n    <% @emprestimos.each do |article| %>\n      <tr>\n        <td><%= article.title %></td>\n        <td><%= article.location %></td>\n        <td><%= article.excerpt %></td>\n        <td><%= article.body %></td>\n        <td><%= article.published_at %></td>\n        <td><%= link_to 'Show', article %></td>\n        <td><%= link_to 'Edit', edit_article_path(article) %></td>\n        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>\n      </tr>\n    <% end %>\n  </tbody>\n</table>",
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
-			"file_size": 1875,
-			"file_write_time": 131425274633411163,
-			"settings":
-			{
-				"buffer_size": 1836,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"buffer_size": 1688,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
@@ -139,16 +106,24 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 372.0,
-		"last_filter": "",
+		"height": 392.0,
+		"last_filter": "package control",
 		"selected_items":
 		[
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 530.0
+		"width": 485.0
 	},
 	"console":
 	{
@@ -176,16 +151,21 @@
 		"/home/joao/Documentos/Rails/bse-webservice",
 		"/home/joao/Documentos/Rails/bse-webservice/app",
 		"/home/joao/Documentos/Rails/bse-webservice/app/assets",
-		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos"
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts"
 	],
 	"file_history":
 	[
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts/application.js",
+		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_form.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts/application.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts/application.js",
 		"/home/joao/Documentos/Rails/bse-webservice/Gemfile",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_fields.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/emprestimos_controller.rb",
@@ -193,15 +173,12 @@
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/cliente.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/emprestimo.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/config/routes.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/new.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/enderecos_controller.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/endereco.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/edit.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/seeds.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170205185445_create_clientes.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/operador.rb",
 		"/home/joao/Documentos/Rails/blog/app/views/articles/show.html.erb",
 		"/home/joao/Documentos/Rails/blog/app/controllers/articles_controller.rb",
@@ -287,150 +264,34 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2449,
+						"buffer_size": 1688,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2207,
-								2207
+								516,
+								516
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 990.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1090,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								580,
-								580
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4322,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3869,
-								3869
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1275.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 349,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								39,
-								39
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1836,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1241,
-								1250
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 369.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
