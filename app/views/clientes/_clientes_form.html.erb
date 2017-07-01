@@ -141,43 +141,43 @@
 		</br>
 
 			 <div class="field">
-				<%= f.label :rua %>
+				<%= endereco_fields.label :rua %>
 				<%= endereco_fields.text_field :rua %>
 			</div>
 			</br>
 
 			 <div class="field">
-				<%= f.label :numero %>
+				<%= endereco_fields.label :numero %>
 				<%= endereco_fields.text_field :numero %>
 			</div>
 			</br>
 
 			 <div class="field">
-				<%= f.label :complemento %>
+				<%= endereco_fields.label :complemento %>
 				<%= endereco_fields.text_field :complemento %>
 			</div>
 			</br>
 
 			 <div class="field">
-				<%= f.label :bairro %>
+				<%= endereco_fields.label :bairro %>
 				<%= endereco_fields.text_field :bairro %>
 			</div>
 			</br>
 
 			 <div class="field">
-				<%= f.label :cidade %>
+				<%= endereco_fields.label :cidade %>
 				<%= endereco_fields.text_field :cidade %>
 			</div>
 			</br>
 
 			 <div class="field">
-				<%= f.label :estado %>
-				<%= endereco_fields.text_field :estado %>
+				<%= endereco_fields.label :estado %>
+				<%= endereco_fields.select :estado, options_for_states(@cliente.endereco.estado) %>
 			</div>
 			</br>
 
 			 <div class="field">
-				<%= f.label :cep %>
+				<%= endereco_fields.label :cep %>
 				<%= endereco_fields.text_field :cep %>
 			</div>
 			</br>

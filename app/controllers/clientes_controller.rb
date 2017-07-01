@@ -24,7 +24,6 @@ class ClientesController < ApplicationController
   def new
     @cliente = Cliente.new
     @cliente.build_endereco
-    # logger.debug "#{@cliente.data_nasc}"
   end
 
   # GET /clientes/1/edit

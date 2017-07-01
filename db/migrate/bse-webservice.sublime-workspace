@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"options",
+				"options_for_select\t(_clientes_form.html.erb)"
+			],
+			[
+				"ender",
+				"endereco"
+			],
+			[
+				"Operador",
+				"OperadorTipo\t(operador_tipo.rb)"
+			],
+			[
+				"operador",
+				"operador_tipos\t(schema.rb)"
+			],
+			[
 				"em",
 				"empréstimos\t(show.html.erb)"
 			],
@@ -88,14 +104,20 @@
 	"buffers":
 	[
 		{
-			"contents": "Package Control Messages\n========================\n\nEmmet\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n",
+			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 1688,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
+				"buffer_size": 4178,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
+			"settings":
+			{
+				"buffer_size": 766,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -123,7 +145,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 485.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -150,46 +172,56 @@
 	[
 		"/home/joao/Documentos/Rails/bse-webservice",
 		"/home/joao/Documentos/Rails/bse-webservice/app",
-		"/home/joao/Documentos/Rails/bse-webservice/app/assets",
+		"/home/joao/Documentos/Rails/bse-webservice/app/helpers",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts"
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate",
+		"/home/joao/Documentos/Rails/bse-webservice/lib",
+		"/home/joao/Documentos/Rails/bse-webservice/lib/tasks",
+		"/home/joao/Documentos/Rails/bse-webservice/log"
 	],
 	"file_history":
 	[
+		"/home/joao/Documentos/Rails/bse-webservice/app/helpers/application_helper.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/operador_tipo.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/operador.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/lib/tasks/utils.rake",
+		"/home/joao/Documentos/Rails/bse-webservice/db/seeds.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/endereco.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/cliente.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208154641_create_operadors.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208152150_create_enderecos.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/emprestimo.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208150438_create_emprestimos.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170630145934_create_operador_tipos.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_form.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/application_controller.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/schema.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170205185445_create_clientes.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/.rake_tasks~",
+		"/home/joao/Documentos/Rails/bse-webservice/Gemfile",
+		"/home/joao/Documentos/Rails/bse-webservice/log/development.log",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170217162651_remove_limit_hashed_password.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/edit.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_form.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts/application.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts/application.js",
-		"/home/joao/Documentos/Rails/bse-webservice/Gemfile",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_fields.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/emprestimos_controller.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/lib/tasks/utils.rake",
-		"/home/joao/Documentos/Rails/bse-webservice/app/models/cliente.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/models/emprestimo.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/config/routes.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/new.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/enderecos_controller.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/models/endereco.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/edit.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/seeds.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170205185445_create_clientes.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/models/operador.rb",
 		"/home/joao/Documentos/Rails/blog/app/views/articles/show.html.erb",
 		"/home/joao/Documentos/Rails/blog/app/controllers/articles_controller.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208152150_create_enderecos.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208154641_create_operadors.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170217161842_rename_senha_to_hashed_password.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170217162651_remove_limit_hashed_password.rb",
 		"/home/joao/Documentos/Rails/blog/db/migrate/20170117193956_create_users.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208150438_create_emprestimos.rb",
 		"/home/joao/Documentos/Rails/blog/app/models/article.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/schema.rb",
 		"/home/joao/Documentos/Rails/restaurante/duck_typing.rb",
 		"/home/joao/Documentos/Rails/blog/app/models/user.rb",
 		"/home/joao/Documentos/Rails/blog/db/migrate/20170119180833_create_comments.rb",
@@ -264,34 +296,63 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1688,
+						"buffer_size": 4178,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								516,
-								516
+								3693,
+								3693
 							]
 						],
 						"settings":
 						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
+						"translation.y": 2464.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -348,6 +409,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"see",
+				"db/seeds.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			]
 		],
 		"width": 0.0
 	},

@@ -1,6 +1,7 @@
 class Cliente < ApplicationRecord
 	
 	#Relacionamento 1 > 1
+	# :dependent => :destroy **** opção para remover esses campos quando o cliente for removido ****
 	has_one :endereco, :dependent => :destroy
 
 	#Relacionamento 1 > N

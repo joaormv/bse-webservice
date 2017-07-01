@@ -2,10 +2,13 @@ class Operador < ApplicationRecord
 
 	attr_accessor :password
 
+	#Relacionamento com o tipo de operador
+	belongs_to :operador_tipo, optional: true
+
 	#Validações
 	validates_confirmation_of :password
-	validates_length_of :password, is => 8
-	validates_presence_of :password, if => :password_required?
+	validates_length_of :password, :is => 8
+	validates_presence_of :password, :if => :password_required?
 
 	#Callback para encriptação de senha antes de salvar no banco
 	before_save :encrypt_new_password
