@@ -8,7 +8,9 @@ class Operador < ApplicationRecord
 	#Validações
 	validates_confirmation_of :password
 	validates_length_of :password, :is => 8
-	validates_presence_of :password, :if => :password_required?
+	validates_presence_of :password, :if => :password_required? 
+	validates_presence_of :operador_tipo_id
+
 
 	#Callback para encriptação de senha antes de salvar no banco
 	before_save :encrypt_new_password

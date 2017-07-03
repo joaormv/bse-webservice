@@ -1,0 +1,35 @@
+<%= form_for(@operador) do |f| %>
+	<% if @operador.errors.any? %>
+			<div id="error_explanation">
+				<h2>Descobrimos <%= pluralize(@operador.errors.count, "erro") %> no preenchimento do formulário :(</h2>
+
+				<ul>
+				<% @operador.errors.full_messages.each do |message| %>
+					<li><%= message %></li>
+				<% end %>
+				</ul>
+			</div>
+	<% end %>
+
+	<div class="field">
+		<%= f.label :user %>
+		<%= f.text_field :user %>
+	</div>
+	</br>
+
+	<div class="field">
+		<%= f.label :senha %>
+		<%= f.text_field :senha %>
+	</div>
+	</br>
+
+	<div class="field">
+		<%= f.label :operador_tipo_id %>
+		<%= f.collection_select(:operador_tipo_id, @tipos_opstions_for_select, :id, :tipo) %>
+	</div>
+	</br>
+
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>

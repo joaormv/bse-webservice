@@ -1,0 +1,22 @@
+<h2>Operadores cadastrados</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Grupo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @operadores.each do |operador| %>
+      <tr>
+        <td><%= operador.user %></td>
+        <td><%= operador.operador_tipo_id %></td>
+        <td><%= link_to 'Editar', edit_operadore_path(operador) %></td>
+        <td><%= link_to 'Remover', operador, method: :delete, data: { confirm: 'Tem certeza que quer remover este operador?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

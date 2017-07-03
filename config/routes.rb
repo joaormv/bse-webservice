@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get '/clientes/show_by_cpf/:query' => 'clientes#show_by_cpf'
 
   resources :clientes
-  resources :endereco
   resources :emprestimo
+  resources :operadores
 end

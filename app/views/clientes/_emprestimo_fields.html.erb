@@ -9,25 +9,30 @@
 		<%= f.label :data_emprestimo %>
 		<%= f.date_select :data_emprestimo, :start_year => 1995, :end_year => Date.today.year %>
 	</div>
+	</br>
 
 	<div class="field">
 		<%= f.label :valor %>
 		<%= f.text_field :valor %>
 	</div>
+	</br>
 
 	<div class="field">
 		<%= f.label :qnt_parcelas %>
 		<%= f.text_field :qnt_parcelas %>
 	</div>
+	</br>
 
 	<div class="field">
 		<%= f.label :valor_parcelas %>
 		<%= f.text_field :valor_parcelas %>
 	</div>
+	</br>
 
 	<div class="field">
 		<%= f.label :corretora %>
 		<%= f.text_field :corretora %>
 	</div>
+	</br>
 	<%= link_to_remove_association 'Remover', f, data: { confirm: 'Tem certeza que quer remover este emprestimo?' } %>
 </div>
