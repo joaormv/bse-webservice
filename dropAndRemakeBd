@@ -1,3 +1,5 @@
 rake db:drop db:create db:migrate db:seed utils:seed
 
+rake db:drop db:create db:migrate utils:seed
+
 

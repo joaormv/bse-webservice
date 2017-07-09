@@ -107,33 +107,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/controllers/operadores_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2073,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/_operadores_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 752,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/models/operador.rb",
-			"settings":
-			{
-				"buffer_size": 1228,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -186,38 +159,33 @@
 	[
 		"/home/joao/Documentos/Rails/bse-webservice",
 		"/home/joao/Documentos/Rails/bse-webservice/app",
-		"/home/joao/Documentos/Rails/bse-webservice/app/controllers",
-		"/home/joao/Documentos/Rails/bse-webservice/app/models",
-		"/home/joao/Documentos/Rails/bse-webservice/app/models/concerns",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/operadores",
-		"/home/joao/Documentos/Rails/bse-webservice/config/initializers",
-		"/home/joao/Documentos/Rails/bse-webservice/db",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate",
-		"/home/joao/Documentos/Rails/bse-webservice/lib",
 		"/home/joao/Documentos/Rails/bse-webservice/lib/tasks"
 	],
 	"file_history":
 	[
+		"/home/joao/Documentos/Rails/bse-webservice/config/initializers/inflections.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/seeds.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/operadores_controller.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/_operadores_form.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/lib/tasks/utils.rake",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/operador.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/config/routes.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/user.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/config/environments/development.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/Gemfile",
+		"/home/joao/Documentos/Rails/bse-webservice/config/initializers/devise.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/edit.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/index.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/new.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170217161842_rename_senha_to_hashed_password.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/operador_tipo.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/models/operador.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/config/routes.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/operadores_controller.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170217162651_remove_limit_hashed_password.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208154641_create_operadors.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/config/initializers/inflections.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/_operadores_form.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/cliente.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170630145934_create_operador_tipos.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/seeds.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/lib/tasks/utils.rake",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/emprestimos_controller.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
@@ -235,7 +203,6 @@
 		"/home/joao/Documentos/Rails/bse-webservice/db/schema.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170205185445_create_clientes.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/.rake_tasks~",
-		"/home/joao/Documentos/Rails/bse-webservice/Gemfile",
 		"/home/joao/Documentos/Rails/bse-webservice/log/development.log",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts/application.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts/application.js",
@@ -285,6 +252,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rails generate",
+			"rails g ",
 			"operadors",
 			"endereco_fields",
 			"cliente",
@@ -324,97 +293,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/controllers/operadores_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2073,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2042,
-								2042
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 728.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/_operadores_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 752,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								429,
-								429
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/models/operador.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1228,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								648,
-								648
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -471,6 +351,14 @@
 				"db/seeds.rb"
 			],
 			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"devise",
+				"config/initializers/devise.rb"
+			],
+			[
 				"gem",
 				"Gemfile"
 			]
@@ -503,11 +391,11 @@
 	"settings":
 	{
 	},
-	"show_minimap": false,
+	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 478.0,
+	"side_bar_width": 402.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

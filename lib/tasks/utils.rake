@@ -51,16 +51,16 @@ namespace :utils do
 
   puts "Endereços criados ... [OK]"
 
-  puts "Criando operadores"
+#  puts "Criando operadores"
 
-  Operador.create!(
+#  Operador.create!(
 
-    user: "joao",
-    password: "12345678",
-    operador_tipo: OperadorTipo.find(1)
-    )
+#    user: "joao",
+#    password: "12345678",
+#    operador_tipo: OperadorTipo.find(1)
+#    )
 
-  puts "Operadores criados ... [OK]"
+#  puts "Operadores criados ... [OK]"
 
 
   end
