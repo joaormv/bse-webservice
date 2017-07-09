@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 20170630145934) do
     t.datetime "updated_at",            null: false
   end
 
-  create_table "operadors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "operadores", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "operador_tipo_id"
     t.string   "user",             limit: 45
     t.string   "hashed_password"
