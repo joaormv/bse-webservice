@@ -1,6 +1,8 @@
 class ClientesController < ApplicationController
 
 	before_action :find, only: [:edit, :update, :destroy]
+  before_action :set_agreements_for_select, only: [:new, :edit, :update, :create]
+  #before_action :authenticate_user!
 
 	def show
 		@cliente = Cliente.find(params[:id])
@@ -73,6 +75,13 @@ class ClientesController < ApplicationController
   end
 
   private
+
+  def set_agreements_for_select
+
+    @agreements_options_for_select = Agreement.all
+
+  end
+
     # Use callbacks to share common setup or constraints between actions.
     def find
       @cliente = Cliente.find(params[:id])

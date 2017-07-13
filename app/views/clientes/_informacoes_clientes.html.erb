@@ -38,7 +38,8 @@
       <th>Valor da parcela</th>
       <th>Data</th>
       <th>Corretora</th>
-      <th colspan="3"></th>
+      <th>Convênio</th>
+      <th colspan="7"></th>
     </tr>
   </thead>
 
@@ -51,6 +52,7 @@
         <td><%= emprestimo.valor_parcelas %></td>
         <td><%= emprestimo.data_emprestimo %></td>
         <td><%= emprestimo.corretora %></td>
+        <td><%= emprestimo.agreement.description %></td>
         <td><%= link_to 'Editar', edit_emprestimo_path(emprestimo) %></td>
         <td><%= link_to 'Remover', emprestimo, method: :delete, data: { confirm: 'Tem certeza que quer remover este emprestimo?' } %></td>
       </tr>

@@ -30,7 +30,8 @@ namespace :utils do
   		valor_parcelas: 1000,
   		banco: "BMG",
   		corretora: "Magma",
-  		cliente: Cliente.first
+  		cliente: Cliente.first,
+      agreement: Agreement.all.sample
   	)
 
   puts "Emprestimos criados ... [OK]"

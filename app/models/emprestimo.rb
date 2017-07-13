@@ -1,6 +1,7 @@
 class Emprestimo < ApplicationRecord
 
 	belongs_to :cliente, optional: true
+	belongs_to :agreement, optional: true
 
 	#Ordena a pesquisa de emprestimos pela data do emprestimo
 	default_scope lambda {order('emprestimos.data_emprestimo')}

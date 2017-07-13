@@ -12,4 +12,15 @@
 
 #puts "Tipos de operador criados ... [OK]"
 
+puts "Criando tipos de contratos..."
 
+Agreement.create!(
+	[
+		{ description: 'PMSP'}, 
+		{ description: 'GOVERNO DE SÃO PAULO'}, 
+		{ description: 'INSS'},
+		{ description: 'SIAPE'}
+	]
+)
+
+puts "Tipos de contratos criados com sucesso."

@@ -3,6 +3,7 @@ class CreateEmprestimos < ActiveRecord::Migration[5.0]
     create_table :emprestimos do |t|
 
     	t.integer :cliente_id
+      t.integer :agreement_id
     	t.float :valor, limit: 9, null: false
     	t.integer :qnt_parcelas, limit: 3, null: false
     	t.float	:valor_parcelas, limit: 9, null: false

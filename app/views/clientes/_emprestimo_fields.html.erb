@@ -30,6 +30,13 @@
 	</br>
 
 	<div class="field">
+		<%= f.label :agreement_id %>
+		<%= f.collection_select(:agreement_id, @agreements_options_for_select, :id, :description, prompt: true) %>
+
+	</div>
+	</br>
+
+	<div class="field">
 		<%= f.label :corretora %>
 		<%= f.text_field :corretora %>
 	</div>
