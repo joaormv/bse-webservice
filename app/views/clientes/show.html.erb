@@ -1,12 +1,20 @@
-<h1>Informações de Clientes</h1>
-</br>
 
+<h1 class="page-header">Detalhamento de cliente</h1>
+<% if notice %>
+	<div class="alert alert-info alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		<%= notice %>
+	</div>
+<%end%>
 <%= render partial: 'informacoes_clientes' %>
 </br>
 </br>
-<%= link_to 'Apagar cliente', @cliente, method: :delete, data: { confirm: 'Tem certeza de que quer apagar este cliente e todos os seus empréstimos?' } %>
-
-<%= link_to 'Editar', edit_cliente_path %>
+<%= link_to edit_cliente_path do %>
+	<button type="button" class="btn btn-primary">Editar</button>
+<%end%>
+<%= link_to @cliente, method: :delete, data: { confirm: 'Tem certeza de que quer apagar este cliente e todos os seus empréstimos?' } do %>
+	<button type="button" class="btn btn-danger">Deletar</button>
+<%end%>
 </br>
 </br>
-<%= link_to 'Voltar', new_cliente_path %>
+</br>

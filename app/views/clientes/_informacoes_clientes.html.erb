@@ -1,22 +1,17 @@
-<h2>Informações Pessoais</h2>
+<h3>Informações Pessoais</h3>
 <p>
 <strong>Nome: </strong> <%= @cliente.nome %><br/>
 <strong>RG: </strong> <%= @cliente.rg %>
 <strong>CPF: </strong> <%= @cliente.cpf %> <br/>
 <strong>Data de Nascimento: </strong> <%= @cliente.data_nasc %><br/>
-<strong>Matricula: </strong> <%= @cliente.matricula %> 
-<strong>Senha: </strong> <%= @cliente.senha %><br/>
-<strong>Convênio: </strong> <%= @cliente.convenio %> <br/>
-<strong>Orgão: </strong> <%= @cliente.orgao %><br/>
 <strong>Tel: </strong> <%= @cliente.tel %> 
 <strong>Cel: </strong> <%= @cliente.tel2 %><br/>
 <strong>Email: </strong> <%= @cliente.email %>
 </p>
 
-<h2>Endereço</h2>
+<h3>Endereço</h3>
 
 <p>
-
 <strong>Rua: </strong> <%= @cliente.endereco.rua %> 
 <strong>Numero: </strong> <%= @cliente.endereco.numero %> <br/>
 <strong>Complemento: </strong> <%= @cliente.endereco.complemento %> <br>
@@ -24,38 +19,76 @@
 <strong>Cidade: </strong> <%= @cliente.endereco.cidade %>
 <strong>Estado: </strong> <%= @cliente.endereco.estado %> <br/>
 <strong>CEP: </strong> <%= @cliente.endereco.cep %> <br/>
-
 </p>
-
-<h2>Emprestimos</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Banco</th>
-      <th>Valor</th>
-      <th>Quantidade de parcelas</th>
-      <th>Valor da parcela</th>
-      <th>Data</th>
-      <th>Corretora</th>
-      <th>Convênio</th>
-      <th colspan="7"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @emprestimos.each do |emprestimo| %>
-      <tr>
-        <td><%= emprestimo.banco %></td>
-        <td><%= emprestimo.valor %></td>
-        <td><%= emprestimo.qnt_parcelas %></td>
-        <td><%= emprestimo.valor_parcelas %></td>
-        <td><%= emprestimo.data_emprestimo %></td>
-        <td><%= emprestimo.corretora %></td>
-        <td><%= emprestimo.agreement.description %></td>
-        <td><%= link_to 'Editar', edit_emprestimo_path(emprestimo) %></td>
-        <td><%= link_to 'Remover', emprestimo, method: :delete, data: { confirm: 'Tem certeza que quer remover este emprestimo?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<h3>Cargos exercidos</h3>
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover">
+		<thead>
+			<tr>
+				<th>Orgão</th>
+				<th>Função</th>
+				<th>Matrícula</th>
+				<th>Senha</th>
+				<th>Convênio</th>
+				<th colspan="3"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @positions.each do |position| %>
+				<tr>
+					<td><%= position.orgao %></td>
+					<td><%= position.funcao %></td>
+					<td><%= position.matricula %></td>
+					<td><%= position.senha %></td>
+					<td><%= position.agreement.description %></td>
+					<td><%= link_to edit_position_path(position), class: "btn btn-primary btn-circle" do %>
+							<i class="fa fa-edit"></i>
+						<%end%>
+					</td>
+					<td><%= link_to position, method: :delete, data: { confirm: 'Tem certeza que quer remover este cargo?' }, class: "btn btn-danger btn-circle" do %>
+							<i class="fa fa-minus"></i>
+						<%end%>
+					</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
+<h3>Emprestimos</h3>
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover">
+		<thead>
+			<tr>
+				<th>Banco</th>
+				<th>Valor</th>
+				<th>Quantidade de parcelas</th>
+				<th>Valor da parcela</th>
+				<th>Data</th>
+				<th>Corretora</th>
+				<th>Convênio</th>
+				<th colspan="7"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @emprestimos.each do |emprestimo| %>
+				<tr>
+					<td><%= emprestimo.banco %></td>
+					<td><%= emprestimo.valor %></td>
+					<td><%= emprestimo.qnt_parcelas %></td>
+					<td><%= emprestimo.valor_parcelas %></td>
+					<td><%= emprestimo.data_emprestimo %></td>
+					<td><%= emprestimo.corretora %></td>
+					<td><%= emprestimo.agreement.description %></td>
+					<td><%= link_to edit_emprestimo_path(emprestimo), class: "btn btn-primary btn-circle" do %>
+							<i class="fa fa-edit"></i>
+						<%end%>
+					</td>
+					<td><%= link_to emprestimo, method: :delete, data: { confirm: 'Tem certeza que quer remover este emprestimo?'}, class: "btn btn-danger btn-circle" do %>
+							<i class="fa fa-minus"></i>
+						<%end%>
+					</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

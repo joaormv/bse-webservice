@@ -24,6 +24,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 #Translations for the devise gem
 gem 'devise-i18n'
+#Rails gem of the Bootstrap based admin theme SB Admin 2
+gem 'bootstrap_sb_admin_base_v2'
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms
 gem 'cocoon'
 # Use jquery as the JavaScript library

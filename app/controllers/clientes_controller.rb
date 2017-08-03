@@ -1,5 +1,7 @@
 class ClientesController < ApplicationController
 
+  layout "application"
+  
 	before_action :find, only: [:edit, :update, :destroy]
   before_action :set_agreements_for_select, only: [:new, :edit, :update, :create]
   #before_action :authenticate_user!
@@ -7,6 +9,7 @@ class ClientesController < ApplicationController
 	def show
 		@cliente = Cliente.find(params[:id])
     @emprestimos = @cliente.emprestimos
+    @positions = @cliente.positions
     # logger.debug "Mostrando o nome do cliente: #{@cliente.nome}"
     # logger.info "#{@cliente}"
 	end
@@ -76,9 +79,21 @@ class ClientesController < ApplicationController
 
   private
 
+  #Carrega lista de convenios para novos cargos
   def set_agreements_for_select
 
     @agreements_options_for_select = Agreement.all
+
+  end
+
+  #Carrega lista de convenios dos cargos exercicos pelo cliente
+  def set_agreement_options_customer
+    if Cliente.position.count > 0
+      Agreement.where(cliente_id: @cliente)
+    else
+      @agreements_options_customer = Agreement.all
+    end
+
 
   end
 
@@ -91,8 +106,9 @@ class ClientesController < ApplicationController
     def cliente_params
       params.require(:cliente).permit(
           :nome, :cpf, :rg, :data_nasc, :matricula, :senha, :orgao, :tel, :tel2, :convenio, :email,
+          positions_attributes: [:funcao, :matricula, :senha, :orgao, :id, :agreement_id, :_destroy],
           endereco_attributes: [:rua, :numero, :complemento, :bairro, :cidade, :estado, :cep],
-          emprestimos_attributes: [:banco, :valor, :corretora, :qnt_parcelas, :valor_parcelas, :data_emprestimo, :id, :_destroy]
+          emprestimos_attributes: [:banco, :valor, :corretora, :qnt_parcelas, :valor_parcelas, :data_emprestimo, :id, :agreement_id, :_destroy]
         )
     end
 end

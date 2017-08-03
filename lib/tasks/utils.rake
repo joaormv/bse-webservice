@@ -10,16 +10,26 @@ namespace :utils do
   		cpf: "368.013.388-03",
   		rg: "46624010-7",
   		data_nasc: Date.today,
-  		matricula: "46549163",
-  		senha: "scasdcas", 
-  		orgao: "escola", 
   		tel: "(11) 2949-5704", 
-  		tel2: "(11) 98488-6199", 
-  		convenio: "PMSP", 
+  		tel2: "(11) 98488-6199",  
   		email: "joao@ruby.com.br"
   )
 
   puts "Clientes criados ... [OK]"
+
+  puts "Criando cargos"
+
+  Position.create!(
+
+    funcao: "Professor",
+    orgao: "Escola Dom Pedro I",
+    matricula: "46549163",
+    senha: "scasdcas",
+    agreement: Agreement.first,
+    cliente: Cliente.first
+  )
+
+  puts "Cargos criados ... [OK]"
 
   puts "Criando emprestimos"
 
@@ -31,7 +41,7 @@ namespace :utils do
   		banco: "BMG",
   		corretora: "Magma",
   		cliente: Cliente.first,
-      agreement: Agreement.all.sample
+      agreement: Agreement.first
   	)
 
   puts "Emprestimos criados ... [OK]"

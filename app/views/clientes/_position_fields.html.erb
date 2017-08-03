@@ -1,0 +1,37 @@
+<div class="nested-fields">
+	<div class="field">
+		<%= f.label :funcao %>
+		<%= f.text_field :funcao, class: "form-control" %>
+	</div>
+	</br>
+
+	<div class="field">
+		<%= f.label :orgao %>
+		<%= f.text_field :orgao, class: "form-control" %>
+	</div>
+	</br>
+
+	<div class="field">
+		<%= f.label :matricula %>
+		<%= f.text_field :matricula, class: "form-control" %>
+	</div>
+	</br>
+
+	<div class="field">
+		<%= f.label :senha %>
+		<%= f.text_field :senha, class: "form-control" %>
+	</div>
+	</br>
+
+	<div class="field">
+		<%= f.label :agreement_id %>
+		<%= f.collection_select(:agreement_id, @agreements_options_for_select, :id, :description, {prompt: true},{class: "form-control"}) %>
+	</div>
+	</br>
+	<%= link_to_remove_association f, data: { confirm: 'Tem certeza que quer remover este cargo?' } do %>
+		<button type="button" class="btn btn-danger">Excluir</button>
+	<% end%>
+	</br>
+	</br>
+	</br>
+</div>

@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :clientes
   resources :emprestimo
   resources :operadores
+  resources :positions
 end

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"btn",
+				"btn-circle"
+			],
+			[
+				"btn-",
+				"btn-primary"
+			],
+			[
+				"form-",
+				"form-control"
+			],
+			[
 				"in",
 				"integer"
 			],
@@ -119,16 +131,16 @@
 			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 4229,
+				"buffer_size": 7009,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
+			"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
 			"settings":
 			{
-				"buffer_size": 979,
+				"buffer_size": 2958,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -185,38 +197,51 @@
 	[
 		"/home/joao/Documentos/Rails/bse-webservice",
 		"/home/joao/Documentos/Rails/bse-webservice/app",
-		"/home/joao/Documentos/Rails/bse-webservice/app/controllers",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes"
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts/shared"
 	],
 	"file_history":
 	[
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts/application.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts/shared/_navigation.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts/application.js",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/show.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/new.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/edit.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_clientes_form.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/seeds.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/clientes_controller.rb",
+		"/home/joao/Área de Trabalho/_clientes_form_bkp.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/public/sb-admin/vendor/bootstrap/css/bootstrap.css",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts/shared/_sidebar.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_position_fields.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/assets/stylesheets/application.css",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/position.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170713190848_create_positions.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/agreement.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/Gemfile",
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/cliente.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/models/emprestimo.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208150438_create_emprestimos.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/config/routes.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_positions_fields.html.erb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170205185445_create_clientes.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/lib/tasks/utils.rake",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170713144747_create_agreements.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170709171915_devise_create_users.rb",
+		"/home/joao/Documentos/Rails/bse-webservice/db/seeds.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/emprestimos_controller.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/config/environment.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_form.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/models/emprestimo.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/models/agreement.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/lib/tasks/utils.rake",
-		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208150438_create_emprestimos.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170713144747_create_agreements.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/endereco.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170205185445_create_clientes.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170709171915_devise_create_users.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/config/initializers/inflections.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/operadores_controller.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/_operadores_form.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/operador.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/config/routes.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/models/user.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/config/environments/development.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/Gemfile",
 		"/home/joao/Documentos/Rails/bse-webservice/config/initializers/devise.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/edit.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/operadores/index.html.erb",
@@ -226,8 +251,6 @@
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170217162651_remove_limit_hashed_password.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208154641_create_operadors.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170630145934_create_operador_tipos.rb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/new.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/edit.html.erb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/controllers/enderecos_controller.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/app/helpers/application_helper.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/db/migrate/20170208152150_create_enderecos.rb",
@@ -235,8 +258,6 @@
 		"/home/joao/Documentos/Rails/bse-webservice/db/schema.rb",
 		"/home/joao/Documentos/Rails/bse-webservice/.rake_tasks~",
 		"/home/joao/Documentos/Rails/bse-webservice/log/development.log",
-		"/home/joao/Documentos/Rails/bse-webservice/app/views/layouts/application.html.erb",
-		"/home/joao/Documentos/Rails/bse-webservice/app/assets/javascripts/application.js",
 		"/home/joao/Documentos/Rails/bse-webservice/app/views/emprestimos/_emprestimos_fields.html.erb",
 		"/home/joao/Documentos/Rails/blog/app/views/articles/show.html.erb",
 		"/home/joao/Documentos/Rails/blog/app/controllers/articles_controller.rb",
@@ -283,6 +304,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"9",
+			"matricula",
+			"MATRICULA",
+			"convenio",
 			"rails generate",
 			"rails g ",
 			"operadors",
@@ -333,15 +358,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4229,
+						"buffer_size": 7009,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1973,
-								1973
+								1000,
+								1000
 							]
 						],
 						"settings":
@@ -350,7 +375,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1215.0,
+						"translation.y": 1710.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -358,19 +383,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_emprestimo_fields.html.erb",
-					"semi_transient": false,
+					"file": "/home/joao/Documentos/Rails/bse-webservice/app/views/clientes/_informacoes_clientes.html.erb",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 979,
+						"buffer_size": 2958,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								726,
-								738
+								2678,
+								2678
 							]
 						],
 						"settings":
@@ -379,7 +404,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1035.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -437,6 +462,14 @@
 		"selected_items":
 		[
 			[
+				"application",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"applica",
+				"app/assets/javascripts/application.js"
+			],
+			[
 				"see",
 				"db/seeds.rb"
 			],
@@ -485,7 +518,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 299.0,
+	"side_bar_width": 328.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

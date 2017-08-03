@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170713144747) do
+ActiveRecord::Schema.define(version: 20170713190848) do
 
   create_table "agreements", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "description", null: false
@@ -22,13 +22,9 @@ ActiveRecord::Schema.define(version: 20170713144747) do
     t.string   "nome",       limit: 45, null: false
     t.string   "cpf",        limit: 14, null: false
     t.string   "rg",         limit: 15, null: false
-    t.string   "matricula",  limit: 20, null: false
-    t.string   "senha",      limit: 10
     t.date     "data_nasc"
-    t.string   "orgao",      limit: 30
     t.string   "tel",        limit: 15, null: false
     t.string   "tel2",       limit: 15
-    t.string   "convenio",   limit: 10, null: false
     t.string   "email",      limit: 35
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
@@ -58,6 +54,17 @@ ActiveRecord::Schema.define(version: 20170713144747) do
     t.string   "cep",         limit: 9,  null: false
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+  end
+
+  create_table "positions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "cliente_id",               null: false
+    t.integer  "agreement_id",             null: false
+    t.string   "funcao",       limit: 100, null: false
+    t.string   "matricula",    limit: 20,  null: false
+    t.string   "senha",        limit: 10
+    t.string   "orgao",        limit: 30
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

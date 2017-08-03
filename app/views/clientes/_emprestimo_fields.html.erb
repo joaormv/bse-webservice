@@ -1,7 +1,7 @@
 <div class="nested-fields">
 	<div class="field">
 		<%= f.label :banco %>
-		<%= f.text_field :banco %>
+		<%= f.text_field :banco, class: "form-control" %>
 	</div>
 	</br>
 
@@ -13,33 +13,41 @@
 
 	<div class="field">
 		<%= f.label :valor %>
-		<%= f.text_field :valor %>
+		<div class="form-group input-group">
+			<span class="input-group-addon">$</span>
+			<%= f.text_field :valor, class: "form-control" %>
+			<span class="input-group-addon">.00</span>
+		</div>
 	</div>
 	</br>
-
-	<div class="field">
-		<%= f.label :qnt_parcelas %>
-		<%= f.text_field :qnt_parcelas %>
-	</div>
-	</br>
-
 	<div class="field">
 		<%= f.label :valor_parcelas %>
-		<%= f.text_field :valor_parcelas %>
+		<div class="form-group input-group">
+			<span class="input-group-addon">$</span>
+			<%= f.text_field :valor_parcelas, class: "form-control" %>
+			<span class="input-group-addon">.00</span>
+		</div>
 	</div>
 	</br>
-
+		<div class="field">
+		<%= f.label :qnt_parcelas %>
+		<%= f.text_field :qnt_parcelas, class: "form-control" %>
+	</div>
+	</br>
 	<div class="field">
 		<%= f.label :agreement_id %>
-		<%= f.collection_select(:agreement_id, @agreements_options_for_select, :id, :description, prompt: true) %>
-
+		<%= f.collection_select(:agreement_id, @agreements_options_for_select, :id, :description, {prompt: true},{class: "form-control"}) %>
 	</div>
 	</br>
-
 	<div class="field">
 		<%= f.label :corretora %>
-		<%= f.text_field :corretora %>
+		<%= f.text_field :corretora, class: "form-control" %>
 	</div>
 	</br>
-	<%= link_to_remove_association 'Remover', f, data: { confirm: 'Tem certeza que quer remover este emprestimo?' } %>
+	<%= link_to_remove_association f, data: { confirm: 'Tem certeza que quer remover este emprestimo?' } do %>
+		<button type="button" class="btn btn-danger">Excluir</button>
+	<%end%>
+	</br>
+	</br>
+	</br>
 </div>
